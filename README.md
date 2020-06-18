@@ -21,7 +21,7 @@ Homework assignment for students to design a weather app using an API.
 
 ## Usage
 
-[Deployed Website](https://lead81.github.io/gt-dayplanner-hw5/)
+[Deployed Website](https://lead81.github.io/gt-weatherapp-hw6/)
 ![gthw6](./image/gthw6.PNG)
 
 ## Credits
