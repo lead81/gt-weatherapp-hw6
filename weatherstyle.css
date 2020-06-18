@@ -1,0 +1,25 @@
+.jumbotron{
+	background-color: #3710e6 !important;
+}
+
+.text-header{
+	color: white;
+	text-align: center;
+}
+
+.container-fluid{
+	border-radius: 10px;
+	border: 1px solid #c7e7ff;
+}
+
+.forecast{
+	margin-top: 50px;
+}
+.media{
+	background-color: #96d7ff;
+	border-radius: 10px;
+	height: 200px;
+	width: 150px;
+	margin-left: 10px;
+	display: inline-block !important;
+}

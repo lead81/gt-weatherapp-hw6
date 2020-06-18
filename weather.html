@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Weather</title>
+    <meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+	<!-- Bring in all sources that can be used -->
+    <link rel="stylesheet" type="text/css" href="weatherstyle.css" />
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+    />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <script src="weather.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
+  </head>
+  <body>
+	  <!-- set main header -->
+    <div class="jumbotron jumbotron-fluid">
+      <div class="container">
+        <h1 class="text-header">Weather Dashboard</h1>
+      </div>
+    </div>
+<!-- set conrainer for search -->
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-2">
+          <div class="form-group">
+            <label for="city">Search for City </label>
+            <input type="text" class="form-control" id="city" />
+            <button type="submit" class="btn btn-default" id="run-search">
+              <i class="fa fa-search"></i> Search
+			</button>
+			<div id="log"></div>
+          </div>
+		</div>
+		<!-- set container for current weather -->
+        <div class="col-sm-10">
+          <div class="container-fluid">
+			  <h1>Current Weather</h1>
+            <h2>
+              <span id="city-name"></span> <span id="dt"></span>
+              <img id="wicon" src="" alt="icon" />
+			</h2>
+			
+            <p>Temperature:<span id="temp"></span></p>
+            <p>Humidity: <span id="humidity"></span></p>
+			<p>Wind Speed: <span id="wind"></span></p>
+		<!-- API no longer provides UV INDEX -->
+            <!-- <p>UV Index: <span id="index"></span></p> -->
+          </div>
+		  <!-- set container for 5 day forecast -->
+          <div class="container-fluid forecast">
+            <h1>5 Day Forecast</h1>
+            <div id="forcast"></div>
+            
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
