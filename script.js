@@ -13,7 +13,7 @@ $(document).ready(function () {
 // pull info for current weather of city and fill in what is needed
     $.ajax({
       url:
-        "http://api.openweathermap.org/data/2.5/weather?q=" +
+        "https://api.openweathermap.org/data/2.5/weather?q=" +
         city +
         "&units=imperial&appid=d10600eba1b72e6a815d376ea2b53260",
       type: "GET",
@@ -39,7 +39,7 @@ $(document).ready(function () {
 	//pull info for 5 day forecast
     $.ajax({
       url:
-        "http://api.openweathermap.org/data/2.5/forecast?q=" +
+        "https://api.openweathermap.org/data/2.5/forecast?q=" +
         city +
         "&units=imperial&appid=d10600eba1b72e6a815d376ea2b53260",
       type: "GET",
